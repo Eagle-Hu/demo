@@ -19,3 +19,7 @@ spring:
   data:
     rest:
       base-path: /demo
+  jackson:
+#    serialization:
+#      write_dates_as_timestamps: false
+    time-zone: GMT+8
