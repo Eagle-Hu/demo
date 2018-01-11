@@ -40,7 +40,7 @@ public class Person {
 
     private Boolean deleted;
 
-    @OneToOne(mappedBy = "person", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    @OneToOne(mappedBy = "person", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private IdentityCard identityCard;
 
     @PrePersist
